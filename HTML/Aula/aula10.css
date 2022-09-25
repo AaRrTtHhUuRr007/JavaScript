@@ -1,0 +1,48 @@
+
+
+:root{
+    --bg-color:var(--bg-color)
+    --primary-color:
+    --white-color:
+
+    --primary-color:
+    --white-color-light:
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%; /*equivale a 1 rem=10px unidade de medida*/
+}
+h1{
+    font-size: 3rem;
+}
+h3{
+    font: size 1.3rem;
+}
+body{
+    font-family: "poppins", sans-serif;
+    background: var(--bg-color);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+nav.menu{
+    display: flex;
+    background:var(--white-color);
+    width: 25rem;
+    height: 25rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+a{
+    background-color: aqua;
+    color:red
+}

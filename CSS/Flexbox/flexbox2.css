@@ -1,0 +1,54 @@
+*{
+    
+    box-sizing: border-box;
+}
+div{
+    border: 1px solid;
+}
+#site{
+    border: 10px solid rgb(0, 0, 0);
+    display:flex ;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 600px;
+}
+.container{
+    background-color: rgb(119, 23, 10);
+    display: flex; 
+        
+}
+.box1{
+    background-color:blue;
+    width: 250px;
+}
+.caixote{
+    background-color: blueviolet;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px
+    
+}
+.caixa1{
+    height: 100px;
+    width: 100px;
+}
+.caixa2{
+    height: 100px;
+    width: 100px;
+}
+.caixa3{
+    height: 100px;
+    width: 100px;
+}
+.caixa4{
+    height: 100px;
+    width: 100px;
+}
+.caixao{
+    background-color:gold;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}

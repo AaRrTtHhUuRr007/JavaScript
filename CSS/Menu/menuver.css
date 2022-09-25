@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+*{
+    font-family: 'Rubik Moonrocks', cursive;
+}
+:root{
+    --cor-principal: rgb(0, 0, 0);
+    --cor-secundaria:blue;
+}
+nav{
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    background-color: var(--cor-principal)
+}
+nav ul li a{
+    color: red;
+    display: block;
+    background-color:var(--cor-principal);
+    padding: 20px;
+    text-decoration: none;
+}   
+
+nav ul li a:hover{
+    background-color: var(--cor-secundaria);
+}
+

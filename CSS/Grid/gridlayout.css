@@ -1,0 +1,37 @@
+#main{
+    border: 1px solid blue;
+}
+.container{
+    padding: 80px;
+    display:grid;
+    background: white;
+    border: 1px solid red;
+    gap: 5px;
+    grid-template-areas: 
+    'header header header header'
+    'content content content sidebar'
+    'news news news sidebar';
+    
+}
+.container div{
+    padding: 20px;
+    border: 2px solid;
+    
+}
+#header{
+    grid-area: header;
+    background-color: blue;
+}
+#sidebar{
+    grid-area: sidebar;   
+    background-color: red;
+}
+#news{
+    grid-area:news;
+    background-color: violet;
+}
+#content{
+    grid-area:content;
+    background-color:green;
+    height: 100%;
+}
