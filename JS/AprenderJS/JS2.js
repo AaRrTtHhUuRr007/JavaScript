@@ -24,3 +24,8 @@ function multiplicaçãoPorDois(valor){
     
 let resultado= multiplicaçãoPorDois(5);
 console.log(resultado);
+
+
+const x= function multi(a,b){return a*b};//isso e chamado de função anonima =(função sem nome).
+var z= x(7,5);//essa função pode ser armazenada em variaveis
+console.log(z);

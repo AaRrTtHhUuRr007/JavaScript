@@ -1,0 +1,22 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+.container{
+    background-color: rgba(10, 5, 5, 0.575);
+    width: 1000px;
+    height: 1000px;
+}
+.head{
+    background-color: aqua;
+    text-decoration: none;
+    list-style: none;
+}
+#menu{
+    display: inline-block;
+    list-style: none;
+   
+}
+.li{
+    display: inline;
+}

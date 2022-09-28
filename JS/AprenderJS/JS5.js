@@ -1,88 +1,41 @@
-// if...else
+//alert('java script');//Mensagem de alerta que aparece dentro do site.
+document.getElementById("texto").innerHTML= "Meu primeiro texto <b>JS</b>!";
+//Alterei um atributo do html e fiz ele imprimir outro /  <b>: serve para colocar palvras em negrito.
 
-//Se a hora estiver estiver entre 06:00 ate 12:00 : Bom dia!
-//Se estiver entre 12:00 ate 18:00 : Boa Tarde!
-//Caso Contrario : Boa Noite!
-let hora =15;
-
-
-if(hora >6 && hora<12){
-    console.log("bom Dia");
+function soma(valor1, valor2){
+    return valor1 + valor2;
 }
-else if(hora >12 && hora <18){
-    console.log("Boa Tarde");
-}
-else{
-    console.log("Boa Noite"); 
-}
-console.log('Fim do if..else');
-//swicht...Case
-let permissao;//comum, gerente, diretor
-switch(permissao){
-    case 'comum':
-    console.log('usuario comum');
-    break;
-    case 'gerente':
-    console.log('usuario grente');
-    break;
-    case 'diretor':
-    console.log('usuario diretor');
-    break;
+/*-------------------Saidas de dados
+1- document.getElementById();
+2-alert();
+3-document.write();
+4-console.log();
+*/
 
-    default:
-        console.log('usuario não reconhecido');
+document.getElementById("texto").innerHTML = soma(10,20); //innerHTML : passa uma mensagem pro documento html que esta sendo substituido.
+var total = soma(50,78);
+//alert (total);// estou passando a mensagem da função pelo o alert. 
+console.log("Oi sou o console.log()");//estou imprimindo uma mensagem no console.
+var num =5;
+{
+   var num=10;
 }
+console.log(num);
+let afe= 8;
+{
+   let afe =16;
 
-console.log('Fim de Swicht..Case');
+} 
+console.log(afe);//aqui vai ser 8 porque o LET ja foi declarado.
 
-                         //LOOPS//
-//loop:1-For
-for(let f=0; f<5; f++){
-    console.log('Estou Aprendendo ',f); 
-}
+let valor1 =5
+let valor2 =15
+var total = (valor1 == valor2)
+total -(valor1 < 2);
+alert (total);
 
-for(let f=0; f<=10; f++){
-    if(f % 2 !==0){//mostrando numeros primos
-        console.log(f);
-    }
-}
-console.log('Fim do loop For');
 
-//loop:2-While
-let w=5;
-while(w>=1){
-    if(w % 2 !==0){
-        console.log(w);
-    }
-    w--;
-}
-console.log('Fim do Loop While');
 
-//loop:3-Do..While
-let d=0
-do{
-    console.log('loop',d);
-    d++;
-}while(d<10)
-console.log('Fim de loop Do..While');
 
-//loop:4-For..In 
-const pessoa={ 
-    nome:'arthur',
-    idade:25
-};
-//key-value: chave
-for(let chave in pessoa){
-    console.log(chave,pessoa['nome']);
-}
-const cores=['vermelho','Azul','Verde'];
-for (let indice in cores){
-    console.log(indice,cores[indice])
-}
-console.log('Fim doo For in');
 
-//loop:5-For..of
-for (let cor of cores){
-    console.log(cor);
-}
 
