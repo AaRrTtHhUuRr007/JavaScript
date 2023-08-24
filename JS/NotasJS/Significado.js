@@ -11,7 +11,7 @@
 5- Function: realiza uma tarefa, e não devolve nada.
     function resetaCor(cor){
     corSite=cor;
-    };
+    };+
     resetaCor()
     console.log()
 
