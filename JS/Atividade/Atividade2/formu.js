@@ -1,6 +1,3 @@
-//guarda os valores passados em nossa form = list
-//apresentar esses valores na tabela
-//deletar algum contato
 
 const contactForm = document.getElementById('contactForm');
 const contatosTable = document.getElementById('contatosTable').getElementsByTagName('tbody')[0];
@@ -12,7 +9,10 @@ const contatosTable = document.getElementById('contatosTable').getElementsByTagN
             const telefone = document.getElementById('telefone').value;
             
             const newRow = contatosTable.insertRow();
-            newRow.innerHTML = `<td>${nome}</td><td>${telefone}</td><td><button class="delete-btn" onclick="deleteRow(this)">Excluir</button></td>`;
+            newRow.innerHTML = `
+                <td>${nome}</td>
+                <td>${telefone}</td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">Excluir</button></td>`;
             
             // Limpar os campos do formulário após adicionar
             document.getElementById('nome').value = '';
@@ -24,3 +24,4 @@ const contatosTable = document.getElementById('contatosTable').getElementsByTagN
             row.parentNode.removeChild(row);
         }
 
+        
